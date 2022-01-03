@@ -1,0 +1,70 @@
+.side_list {
+	width: 180px;
+	float: left;
+	margin-top: 150px;
+	margin-left: 15%;
+	font-family: Arial;
+}
+.side_list_head {
+	width: 180px;
+	margin-left: -20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.side_list ul {
+	list-style-type: none;
+	line-height: 50px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.side_list_con li a:hover {
+	color: #00b000;
+	cursor: pointer;
+}
+#잎 {
+	height: 35px;
+	float: left;
+	margin-left: 4%;
+}
+#head차 {
+	font-family: Gruppo;
+	height: 35px;
+	font-size: 23px;
+	font-weight: bold;
+	color: #3f3f3f;
+	margin-left: 5%;
+	margin-top: 30px;
+}
+#ex {
+	margin: -5px 27%;
+}
+p#ex span {
+	font-weight: bold;
+	color: #004080;
+}
+
+h1 {
+	border-bottom: thick double gray;
+	padding: 5px;
+	font-family: Arial;
+	font-size: 27px;
+	color: #3c3c3c;
+	padding-left: 50px;
+	margin: 20px;
+}
+.td1, .td2, .td3 {
+	width: 800px;
+	margin-left: 25%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.td1 td, .td3 td { 
+	border-bottom: 2px dotted green;
+}
+table {
+	margin-left: 30px;
+	width: 750px;
+}
+.td2 img {
+	margin-left: 15px;
+}

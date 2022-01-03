@@ -1,0 +1,567 @@
+body {
+	font-family : Arial, Verdana, sans-serif;
+	margin : 0;
+	padding-top : 80px;
+}
+a {
+	text-decoration : none;
+	color : #111111;
+}
+header a:hover {
+	color : #74a767;
+}
+
+header {
+	height : 80px;
+	width : 100%;
+	min-width : 1400px;
+	background-color : rgba(255, 255, 255, 1);
+	border-bottom : 1px solid #cec4da;
+	position : fixed;
+	z-index : 180;
+	top : 0px;
+	transition : top 0.3s ease;
+	-webkit-user-select : none;	/* 크롬, 사파리 */
+	-moz-user-select : none;	/* 파이어폭스 */
+	-ms-user-select : none;		/* 익스플로러 */
+	-o-user-select : none;		/* 오페라 */
+	user-select : none;
+}
+.nav-up {
+	top:-80px;
+	transition : top 0.2s ease;
+}
+.nav_box {
+	width : 1400px;
+	height : 100%;
+	margin : 0 auto;
+	position : relative;
+	z-index : 101;
+}
+.mainlogo {
+	float : left;
+	height : 80px;
+}
+.mainlogo a {
+	display : block;
+	height : 100%;
+}
+.mainlogo img {
+	height : 80px;
+	margin-right : 15px;
+	padding : 0;
+}
+nav ul.li_dep1 {
+	list-style-type : none;
+	float:left;
+	width : 800px;
+	text-align : center;
+	margin-top : 0;
+	margin-bottom : 0;
+	padding-left : 0;
+}
+nav ul.li_dep1 li {
+	float : left;
+	width : 160px;
+	font-size : 20px;
+	font-weight : bold;
+}
+nav ul.li_dep1 li a{
+	display : inline-block;
+	height : 80px;
+	width : 160px;
+	line-height : 80px;
+}
+
+/* 네비사이드  */
+.nav_side {
+	position : relative;
+	float : right;
+	width : 350px;
+	height : 80px;
+	margin:0;
+}
+.nav_side .menubox_btn {
+	overflow : auto;
+	float : left;
+	margin-top : 0px;
+}
+.menubox_btn a.nav_search, a.nav_cart, a.nav_more{
+	position : absolute;
+	display : block;
+	width : 44px;
+	height: 80px;
+	cursor : pointer;
+}
+.menubox_btn a.nav_search {
+	background : url('../images/headerFooter/nav_search.png') no-repeat 50% 50%;
+	transition : background 0.3s ease;
+	
+}
+.menubox_btn a.nav_search:hover {
+	background : url('../images/headerFooter/nav_search_on.png') no-repeat 50% 50%;
+	transition : background 0.3s ease;
+	
+}
+.menubox_btn a.nav_cart {
+	left : 60px;
+	background : url('../images/headerFooter/nav_cart.png') no-repeat 50% 50%;
+	transition : background 0.3s ease;
+}
+.menubox_btn a.nav_cart:hover {
+	background : url('../images/headerFooter/nav_cart_on.png') no-repeat 50% 50%;
+	transition : background 0.3s ease;
+}
+.menubox_btn a.nav_more {
+	left : 120px;
+	background : url('../images/headerFooter/nav_more.png') no-repeat 50% 50%;
+	transition : background 0.3s ease;
+}
+.menubox_btn a.nav_more:hover {
+	background : url('../images/headerFooter/nav_more_on.png') no-repeat 50% 50%;
+	transition : background 0.3s ease;
+}
+.nav_moreBox {
+	margin-top : 80px;
+	background-color : #fff;
+	position : absolute;
+	height : 130px;
+	width : 140px;
+	margin-left : 60px;
+	display : none;
+	border-radius : 0px 0px 10px 10px;
+}
+.nav_moreBox_on {
+	display : block;
+}
+.nav_moreBox ul{
+	list-style-type : none;
+	text-align : center;
+	padding-left : 0;
+	margin-top : 10px;
+	
+}
+.nav_moreBox ul li{
+	width : 140px;
+	height : 36px;
+	cursor : pointer;
+	line-height : 36px;
+	
+}
+/* 로그인&언어 */
+.nav_side ul.loglang {
+	float : right;
+	margin-right : 15px;
+}
+.nav_side ul.loglang {
+	list-style-type : none;
+	margin-top : 0;
+}
+.nav_side ul.loglang li{
+	float : left;
+	width : 70px;
+	text-align : center;
+}
+.nav_side ul.loglang li a.langsub {
+	display : inline-block;
+	height : 100%;
+	width : 100%;
+	line-height : 80px;
+	cursor : pointer;
+}
+.login {
+	position : absolute;
+	width : 100px;
+	height : 95px;
+	background-color : #fff;
+	border-radius : 0px 0px 10px 10px;
+	margin-left : -15px;
+	display : none;
+}
+.login_on {
+	display : block;
+}
+.login ul {
+	list-style-type : none;
+	padding-left : 0;
+	text-align : center;
+	margin-top : 5px;
+}
+.login ul li{
+	width : 100px !important;
+	height : 40px;
+	line-height : 40px;
+}
+.login ul li a{
+	display : block;
+	width : 100%;
+	height : 100%;
+}
+.lang {
+	width : 100px;
+	height : 115px;
+	margin-top : 0;
+	margin-left : -15px;
+	background-color : #fff;
+	position : absolute;
+	border-radius : 0px 0px 10px 10px;
+	display : none;
+}
+.lang_on {
+	display : block;
+}
+.lang ul {
+	list-style-type : none;
+	text-align : center;
+	padding-left : 14px;
+	padding-right : 14px;
+	padding-top : 10px;
+}
+.lang ul li {
+	height : 32px;
+	line-height : 32px;
+	margin-top : 0;
+}
+.lang ul li a{
+	display : block;
+	height : 100%;
+	width : 100%;
+	cursor : pointer;
+}
+.lang ul li a:hover {
+	font-weight : bold;
+}
+
+
+/* 2depth 리스트 */
+.li_dep2box {
+	margin-top : -16px;
+	background-color : #fff;
+	height : 0px;
+	border-top : 1px solid gray;
+	border-bottom : 1px solid #ced4da;
+	width : 100%;
+	position : absolute;
+	left : 50%;
+	visibility : hidden;
+	opacity : 0;
+	z-index : 100;
+}
+.li_dep2box .li_dep2 {
+	width : 1400px;
+	margin : 20px auto;
+	overflow : auto;
+}
+.li_dep2box .li_dep2 ul.left {
+	margin-left : 197px;
+	
+}
+.li_dep2box .li_dep2 ul {
+	margin-top : -1500px;
+	list-style-type : none;
+	padding-left : 0;
+	margin-top : 0;
+	text-align : center;
+	float : left;
+}
+.li_dep2box .li_dep2 ul li {
+	width : 160px;
+	height : 45px;
+}
+.li_dep2box .li_dep2 ul li a {
+	display : block;
+	width : 100%;
+	height : 100%;
+	line-height : 40px;
+}
+
+/* 검색 창 */
+.head_search {
+	width : 120%;
+	height : 105%;
+	position : fixed;
+	top : 50%;
+	left : 50%;
+	transform : translate(-50%, -50%);
+	z-index : 300;
+	background-color : rgba(0, 0, 0, 0.5);
+	display : none;
+	text-align : center;
+}
+.head_searchBox {
+	height : 505px;/*705*/
+	width : 700px;/*880*/
+	padding : 40px;
+	margin : 120px auto auto auto;
+	background-color : #ffffff;
+}
+.head_searchBox .search_inner {	
+	text-align : center;
+}
+.search_inner .inputbox {
+	margin-top : 30px;
+	height : 70px;
+	width : 630px;
+	border : 4px solid black;	
+	position : relative;
+	margin : 40px auto 0 auto;
+}
+.inputbox [type="text"]{
+	clear : both;
+	height : 100%;
+	width : 500px;
+	padding: 0px 0 10px 30px;
+	font-size : 150%;
+	border : none;
+	position : absolute;
+	left : 0px;
+	background-color : rgba(255, 255, 255, 0);
+}
+.inputbox [type="text"]:focus {
+	outline:none;
+}
+.inputbox .goSearch {
+	display : block;
+	position : absolute;
+	top : 15px;
+	right : 15px;
+	height : 40px;
+	width : 40px;
+	background : url('../images/headerFooter/go_search.png') no-repeat 50% 50%;
+	cursor : pointer;
+}
+.head_searchBox .btn_searchClose {
+	display : block;
+	width : 20px;
+	height : 20px;
+	float : right;
+	background : url('../images/headerFooter/close_search.png');
+	cursor : pointer;
+}
+/* 검색 바텀 */
+.innerBottom {
+	width : 600px;
+	margin : 0 auto;
+	margin-top : 15px;
+}
+/* 최근검색 */
+.innerBottom .recent {
+	width : 280px;
+	height : 350px;
+	float : left;
+	margin-right : 10px;
+}
+.recent h3 {
+	font-size : 22px;
+	text-align : left;
+	line-height : 36px;
+}
+.recent h3 input {
+	float : right;
+	width : 100px;
+	height : 36px;
+	font-size : 15px;
+	background-color : #fff;
+	color : #000;
+	border : 1px solid gray;
+	border-radius : 18px;
+	font-weight : 500;
+	cursor : pointer;
+	transition : 0.3s ease;
+}
+.recent h3 input:focus {
+	outline : none;
+}
+.recent h3 input:hover {
+	background-color : rgb(51, 51, 51);
+	color : #fff;
+	transition : 0.3s ease;
+}
+/* 추천 */
+.innerBottom .recomand {
+	width : 280px;
+	margin-left : 10px;
+	float : left;
+	text-align : left;
+}
+.recomand h3 {
+	font-size : 22px;
+	line-height : 36px;
+}
+.recomand ul {
+	list-style : none;
+	float : left;
+	padding-left : 0;
+	margin-top : 0;
+}
+.recomand ul li {
+	width : 200px;
+	height : 40px;
+}
+.recomand ul li a {
+	display : block;
+	line-height : 30px;
+	height : 30px;
+	width : 100%;
+	cursor : pointer;
+	font-size : 110%;
+}
+.recomand ul li a:hover {
+	font-weight : bold;
+	color : #74a767;
+}
+
+
+/* footer */
+/* footerTop */
+footer {
+	min-width : 1400px;
+}
+.fooTopBox {
+	height : 63px;
+	background-color : #727272;
+}
+.footTopInner {
+	position : relative;
+	width : 1400px;
+	margin : 0 auto;
+	padding-top : 22px;
+	font-size : 13px;
+	color : #e3e3e3;
+}
+.footTopInner span {
+	float : left;
+}
+.footTopInner span::after {
+	content : "I";
+	margin : 0 10px;
+}
+.footTopInner ul {
+	float : left;
+	list-style : none;
+	overflow : hidden;
+	position : relative;
+	height : 20px;
+	width : 350px;
+	margin : 0;
+	padding : 0;
+}
+.footTopInner ul li:first-child {
+	position : absolute;
+	transform : translateY(0px);	
+}
+.footTopInner ul li {
+	position : absolute;
+	transform : translateY(20px);
+}
+.footTopInner a {
+	margin-right : 20px;
+	color : #e3e3e3;
+}
+.right {
+	float : right;
+	margin-top : -12px;
+	width : 250px;
+	position : relative;
+}
+.bottomLogin {
+	float : left;
+	background-color : #3f3e3c;
+	width : 94px;
+	height : 40px;
+	text-align : center;
+	line-height : 40px;
+	border : 1px solid black;
+}
+.bottomLogin a {
+	display : block;
+	width : 100%;
+	height : 100%;
+}
+.right img#sns_f {
+	position : absolute;
+	border : 1px solid black;
+	border-radius : 50%;
+	left : 120px;
+	cursor : pointer;
+}
+.right img#sns_i {
+	position : absolute;
+	border : 1px solid black;
+	border-radius : 50%;
+	left : 185px;
+	cursor : pointer;
+}
+
+
+/* footerbottom */
+.fooBottomBox {
+	height : 186px;
+	background-color : rgb(240,247,229);
+	clear : both;
+}
+.fooBottomInner {
+	width : 1400px;
+	margin : 0 auto;
+}
+.bottomLogo {
+	height : 186px;
+	width : 250px;
+	text-align : center;
+	padding-top : 55px;
+	padding-left : 0px;
+	box-sizing : border-box;
+	float : left;
+}
+.fooBottomInner {
+	font-size : 14px;
+}
+.relsite {
+	overflow : auto;
+	padding-top : 8px;
+}
+.relsite ul {
+	list-style : none;
+	padding-left : 0;
+}
+.relsite ul li {	
+	float : left;
+	box-sizing : border-box;
+	font-weight : bold;
+}
+.relsite ul a {
+	display : inline-block;
+	height : 100%;
+	width : 100%;
+	cursor : pointer;
+}
+.relsite ul a::after {
+	content : "I";
+	margin : 0 10px;
+	cursor : default;
+}
+.relsite ul a#relsiteLast::after {
+	content : "" !important;
+	margin : 0 10px;
+	cursor : default;
+}
+.comAddress p{
+	line-height : 15px !important;
+}
+
+
+/* goTop */
+.goTop {
+	position : fixed;
+	display : block;
+	bottom : 30px;
+	right : -50px;
+	transition : 0.3s ease;
+	width : 40px;
+	height : 40px;
+	background : url('../images/headerFooter/btn_goTop.png') no-repeat 50% 50%;
+	/*background-color : green;*/
+}
+.show {
+	transform : translateX(-60px);
+}

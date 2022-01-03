@@ -1,0 +1,511 @@
+/* 슬라이드 이미지 */
+.slideImgBack {
+	height : 600px;
+	width : 100%;
+	max-width : 1920px;
+	min-width : 1400px;
+	background-color : rgb(207, 217, 193);
+	position : absolute;
+	left : 50%;
+	transform : translate(-50%, 0);
+}
+.slideImgBoxInner {
+	width : 1400px;
+	height : 600px;
+	margin : 0 auto;
+	position : relative;
+}
+.slide {
+	position : absolute;
+	top : 0;
+	width : 1400px;
+	opacity : 1;
+}
+.slideImg_1 {
+	z-index : 20;
+}
+.slide img {
+	float : right;
+	width : 825px;
+	height : 600px;
+}
+.slideImgContent {
+	width : 620px;
+	margin : 0 auto;
+	margin-right : 700px;
+	padding-top : 50px;
+}
+.slideImgContent p {
+	left : 0px;
+	margin : 0;
+	margin-top : 90px;
+}
+/* 슬라이드 감추기 */
+.slideImg_2, .slideImg_3, .slideImg_4 {
+	opacity : 0;
+}
+/* 슬라이드 이미지 버튼 */
+.slideImgBtnBox {
+	position : absolute;
+	width : 427px;
+	height : 80px;
+	left : 150px;
+	bottom : 0px;
+	z-index : 30;
+	-webkit-user-select : none;
+	-moz-user-select : none;
+	-ms-user-select : none;
+	-o-user-select : none;
+	user-select : none;
+
+}
+.circleBtn {
+	position : absolute;
+	bottom : 40%;
+}
+.circleBtn div {
+	height : 15px;
+	width : 15px;
+	border-radius : 50%;
+	margin : 0 10px;
+	float : left;
+	cursor : pointer;
+}
+.circle_1 {
+	background-color : rgb(51, 51, 51);	
+}
+.circle_2, .circle_3, .circle_4 {
+	background-color : rgb(190, 190, 190);
+}
+.circleBtn div:hover {
+	background-color : rgb(51, 51, 51);
+}
+.slideImgNext {
+	position : absolute;
+	width : 250px;
+	height : 80px;
+	right : 0;
+}
+.slideImgNext span{
+	display : inline-block;
+	height : 80px;
+	width : 80px;
+	font-size : 200%;
+	color : rgb(190, 190, 190);
+	text-align : center;
+	line-height : 80px;
+	cursor : pointer;
+}
+.slideImgNext span:hover {
+	background-color : rgb(51, 51, 51);
+	color : #fff;
+}
+
+
+
+
+/* section */
+/* content */
+.wrapper {
+	width : 100%;
+	margin : 0 auto;
+	padding-top : 50px;
+}
+section {
+	width : 100%;
+}
+.conBox {
+	width : 1400px;
+	overflow : auto;
+	margin : 0 auto;
+	position : relative;
+}
+/* 박스 폼 */
+.informBox {
+	width : 440px;
+	height : 200px;
+	float : left;
+	margin-right : 50px;
+	position : relative;
+	margin-left : 35px;
+}
+.photoBox {
+	width : 420px;
+	height : 320px;
+	border : 1px solid black;
+	float : left;
+	margin-right : 50px;
+	position : relative;
+}
+.teaInfoBox {
+	width : 360px;
+	height : 300px;
+	float : left;
+	position : relative;
+}
+
+/* 공지사항 */
+.informBox>p{
+	width : 95px;
+	height : 50px;
+	text-align : center;
+	line-height : 50px;
+	background-color : rgb(51, 51, 51);
+	color : #fff;
+	margin-top : 5px;
+	margin-bottom : 5px;
+}
+.informBox>span {
+	position : absolute;
+	width : 160px;
+	right : 0;
+	top : 5px;
+}
+.form span a { /* 포토갤러리 + 버튼에도 적용 */
+	display : inline-block;
+	position : relative;
+	top : 2px;
+	text-align : center;
+	box-sizing : border-box;
+	cursor : pointer;
+}
+.informBox span a:not(.more) {
+	width : 48px;
+	height : 48px;
+	line-height : 46px;
+	border : 1px solid black;
+	margin-right : 2px;
+	border : 1px solid black;
+	font-size : 20px;
+	-webkit-user-select : none;
+	-moz-user-select : none;
+	-ms-user-select : none;
+	-o-user-select : none;
+	user-select : none;
+}
+.form span a.more { /* 포토갤러리 + 버튼에도 적용 */
+	width : 35px;
+	height : 35px;
+	line-height : 35px;
+	font-size : 120%;
+	font-weight : bold;
+	margin-left : 5px;
+}
+.form span a:active { /* 포토갤러리 + 버튼에도 적용 */
+	border : 1px solid black;
+	outline : black solid thin;
+}
+.inform .t1 {
+	font-size : 120%;
+	position : relative;
+	top : 15px;
+	margin-top : 60px;
+}
+.inform {
+	position : absolute;
+	height : 115px;
+	top : 70px;
+}
+.inform:first-of-type {
+	visibility : visible;
+	opacity : 1;	
+}
+.inform:not(.inform:first-of-type) {
+	visibility : hidden;
+	opacity : 0;
+}
+.inform .t2 {
+	display : block;
+	position : relative;
+	top : 15px;
+	max-height : 75px;
+	overflow : hidden; 
+	word-break : keep-all;
+}
+.inform .t2::before {
+	content : '';
+	display : block;
+	position : relative;
+	top : 0;
+	left : 0;
+	width : 100px;
+	height : 1px;
+	margin-top : 15px;
+	margin-bottom : 15px;
+	background-color : #000;
+}
+.inform .t2::after {
+	content : '...';
+	position : absolute;
+	right : 0;
+	bottom : 0;
+	width : 80px;
+	height : 25px;
+	overflow : hidden;
+	text-indent : -150px;
+	pointer-events : none;
+	background : linear-gradient(to right, rgba(255,255,255, 0), #fff 90%);
+}
+
+/* 포토갤러리 */
+.photoBox p:not(.photoTitle){
+	font-size : 170%;
+	font-weight : 550;
+	margin-top : 15px;
+	margin-bottom : 5px;
+	padding-left : 20px;
+}
+.photoBtn {
+	position : absolute;
+	right : 15px;
+	top : 15px;
+}
+.photoBox .photo {
+	width : 320px;
+	height : 170px;
+	margin : 0 auto;
+	overflow : hidden;
+	text-align : center;
+}
+.photoBox p.photoTitle {
+	margin-top : 15px;
+	margin-bottom : 15px;
+	padding-left : 50px;
+}
+.photo img {
+	height : 100%;
+	width : 100%;
+	vertical-align : middle;
+}
+
+/* 녹차이야기 */
+.teaBox {
+	float : left;
+	margin-top : 5px;
+	width : 160px;
+	height : 240px;
+	background-color : rgb(51, 51, 51);
+	text-align : center;
+	color : #fff;
+}
+.teaBox p.title {
+	padding-top : 40px;
+	font-size : 150%;
+}
+.teaBox p:not(.title) {
+	padding-top : 10px;
+	font-size : 13px;
+}
+.teaInfoBox ul {
+	float : left;
+	list-style : none;
+	padding-left : 35px;
+	margin-top : 10px;
+}
+.teaInfoBox ul li {
+	margin-top : 10px;
+	width : 150px;
+	height : 35px;
+}
+.teaInfoBox ul li a {
+	padding-left : 15px;
+	display : block;
+	width : 100%;
+	height : 100%;
+	line-height : 35px;
+}
+.teaInfoBox ul li a:hover {
+	background-color : rgb(51, 51, 51);
+	color : #fff;
+}
+.teaInfoBox ul li a:hover::after {
+	content : ">";
+	float: right;
+	margin-right : 10px;
+	color : #fff;
+}
+.teaInfoBox img {
+	position : absolute;
+	z-index : -1;
+	top : 10px;
+	right : -40px;
+	opacity : 0.5;
+}
+
+/* product */
+.proBox {
+	clear : both;
+	padding-top : 60px;
+	position : relative;
+	width : 1400px;
+	min-width : 1400px;
+	margin : 0 auto;
+	box-sizing : border-box;
+}
+.proTeaBox, .proFoodBox {
+	width : 100%;
+	height : 440px;
+	margin-bottom : 140px;
+	position : relative;
+	opacity : 0;
+}
+@keyframes mk_bottom_to_top {
+	0% {
+		transform: translate(0, 50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+.proShow {
+	animation: mk_bottom_to_top 0.6s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+.proTeaBox>h2, .proFoodBox>h2 {
+	margin-bottom : 60px;
+}
+.proTeaBox>a, .proFoodBox>a {
+	position : absolute;
+	top : 12px;
+	right : 25px;
+	width : 180px;
+	height : 40px;
+	font-size : 18px;
+	text-align : center;
+	line-height : 42px;
+	border : 1px solid gray;
+	border-radius : 25px 25px;
+	font-weight : 550;
+	transition : 0.2s ease;
+}
+.proTeaBox>a:hover, .proFoodBox>a:hover {
+	background-color : rgb(51, 51, 51);
+	color : #fff;
+}
+/* 티 다음 이전 버튼 */
+.proTeaBox button,.proFoodBox button {
+	display : inline-block;
+	position : absolute;
+	transform : translate(0,-50%);
+	top : 50%;
+	width : 40px;
+	height : 100px;	
+	box-sizing : border-box;
+	background-color : rgba(0, 0, 0, 0);
+	border : none;
+	transition : 0.3s ease !important;
+	align-items: flex-start;
+	font-size : 20px;
+	color : rgb(51, 51, 51);
+}
+.proTeaBox button.teaPrev, .foodPrev {
+	left : 00px;
+	border-radius : 5px 0 0 5px;
+	cursor : default;
+	opacity : 0;
+}
+.proTeaBox button.teaNext, .foodNext {
+	cursor : pointer;
+	right : 0px;
+	border-radius : 0 5px 5px 0;
+}
+.proTeaBox button:hover, .proFoodBox button:hover {
+	background-color : rgb(51, 51, 51);
+	color : #fff;
+}
+.proTeaBox button:focus, .proFoodBox button:focus {
+	outline : none;
+}
+/* 녹차 상품 폼*/
+.proTea, .proFood {
+	width : 100%;
+	height : 350px;
+	position : relative;
+}
+.proInner {
+	width : 1320px;
+	height : 100%;
+	margin : 0 auto;
+	overflow : hidden;
+}
+.teaSlide, .foodSlide {
+	width : 2800px;
+	height : 100%;
+}
+.pro {
+	float : left;
+	width : 232px;
+	height : 100%;
+	margin-right : 40px;
+}
+.pro .proFrame {
+	width : 100%;
+	height : 232px;
+	overflow : hidden;
+}
+.proFrame a {
+	display : block;
+	width : 100%;
+	height : 100%;
+	text-align : center;
+	position : relative;
+}
+.proFrame a img {
+	width : 232px;
+	height : 232px;
+	transition : all 0.3s ease;
+	margin : 0 auto;
+}
+.proFrame a img:hover {
+	transform-origin : center center;
+	transform : scale(1.1);
+	transition : all 0.3s ease;
+}
+.pro>a {
+	display : block;
+	margin : 10px 0;
+	font-size : 18px;
+}
+.pro>p {
+	margin-top : 20px;
+	font-size : 18px;
+}
+/* 배경이미지 */
+.back {
+	width : 100%;
+	min-width : 1400px;
+	height : 600px;
+	overflow : hidden;
+	position : absolute;
+	top :1480px;
+	left : 0;
+	right : 0;
+	margin : 0 auto;
+	-webkit-user-select : none;	/* 크롬, 사파리 */
+	-moz-user-select : none;	/* 파이어폭스 */
+	-ms-user-select : none;		/* 익스플로러 */
+	-o-user-select : none;		/* 오페라 */
+	user-select : none;
+	z-index : -1;
+	
+}
+.backgroundImg {
+	width : 1400px;
+	height : 600px;
+	overflow : visible;
+	position : relative;
+	top : 0;
+	left : 0;
+	right : 0;
+	margin : 0 auto;
+}
+.backgroundImg>img {
+	position : relative;
+	left : -260px;
+	opacity : 0.7;
+}
+
+
+
+

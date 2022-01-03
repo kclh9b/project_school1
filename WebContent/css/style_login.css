@@ -1,0 +1,43 @@
+h3 {
+	margin: 10px 20%;
+}
+#ex {
+	margin: 2px 20%;
+}
+p#ex span {
+	font-weight: bold;
+	color: #004080;
+}
+#log {
+	border: 1px solid gray;
+	width: 800px;
+	height: 420px;
+	margin: 10% 25%;
+	text-align: center;
+	background-color: #ffffff;
+	padding: 10px;
+}
+#login {
+	width: 400px;
+	height: 390px;
+	padding: 10px;
+	border-right: 1px solid gray;
+}
+#join {
+	padding: 0 10px;
+	width: 400px;
+	height: 50%;
+}
+#logsearch {
+	width: 400px;
+	height: 50%;
+}
+.tbmain {
+	padding: 10px;
+	border-bottom: 2px solid gray;
+	font-size: 25px;
+	font-weight: bold;
+}
+.tbex {
+	color: #959595;
+}

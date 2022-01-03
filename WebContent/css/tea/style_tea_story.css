@@ -1,0 +1,40 @@
+h3.title {
+	margin: 35px 28%;
+}
+#img {
+	margin: -15% 25%;
+}
+#ex {
+	margin: 2px 27%;
+}
+p#ex span {
+	font-weight: bold;
+	color: #004080;
+}
+
+.side_list {
+	width: 180px;
+	float: left;
+	margin-top: 150px;
+	margin-left: 15%;
+	font-family: Arial;
+}
+.side_list_head {
+	width: 180px;
+	margin-left: -20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.side_list ul {
+	list-style-type: none;
+	line-height: 50px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.side_list_con li a:hover {
+	color: #00b000;
+	cursor: pointer;
+}
+.imgBox {
+	height : 1050px;
+}
